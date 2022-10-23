@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   //invocando la URL
-  materiaURL: 'https://fxkl2w0smd.execute-api.us-east-1.amazonaws.com/api/materia/'
+  materiaURL: 'https://fxkl2w0smd.execute-api.us-east-1.amazonaws.com/api/materia/',
+  estudiantesURL:  'https://l9rqohmxg0.execute-api.us-east-1.amazonaws.com/api/estudiante/1155704/'
 };
 
 /*
