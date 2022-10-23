@@ -5,7 +5,7 @@ import { ListComponent } from './materia/list.component';
 
 const routes: Routes = [
   {path: '', component: ListComponent},
-  {path: '', component: EstudianteComponent},
+  {path: 'estudiante/:id', component: EstudianteComponent},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
