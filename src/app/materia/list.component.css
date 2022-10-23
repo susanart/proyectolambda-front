@@ -9,23 +9,34 @@
     --lg: 18px;
   }
   body {
-    margin: 0;
+    
     font-family: 'Quicksand', sans-serif;
     
     
   }
 
-.align-items-sm-start {
-    background: #ACD9B2 !important;
-   
+.container-title {
+  color: #ACD9B2;
+  font-weight: 500;
+  padding: 14px;
 }
 
-.align-items-sm-start a {
 
-    text-decoration: none;
-    color: var(--very-light-pink);
-    border: 1px solid var(--white);
-    padding: 8px;
-    border-radius: 8px;
+.container-nav-top {
+  background-color: #d0ebd3;
+  margin-top: -18px;
+  margin-left:-12px;
+  margin-right: -12px;
+  padding: 10px;
 }
 
+.px-sm-2 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.table-materia {
+  border: 2px;
+  
+  width: 100%;
+}

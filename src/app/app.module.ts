@@ -11,11 +11,15 @@ import { FormsModule } from '@angular/forms';
 // external
 import { NgxSpinnerModule } from "ngx-spinner";
 import { ListComponent } from './materia/list.component';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
+    HeaderComponent,
+
 
   ],
   imports: [

@@ -35,8 +35,8 @@ export class ListComponent implements OnInit {
     
   }
 
-  orderBy(productos: Materia[]): Materia[] {
-    return productos.sort((a, b) => (a.id > b.id ? 1 : -1))
+  orderBy(materias: Materia[]): Materia[] {
+    return materias.sort((a, b) => (a.id > b.id ? 1 : -1))
   }
 
   changeStyle (){

@@ -1,17 +1,16 @@
 export class Materia {
 
+
     id: number;
-    idMateria: number;
-    nombre: string;
-    notas: number;
+    nombreMateria: string;
+
 
    
 
-    constructor(id: number, idMateria: number, nombre: string, notas: number) {
+    constructor(id: number, nombreMateria: string) {
         this.id = id;
-        this.idMateria = idMateria;
-        this.nombre = nombre;
-        this.notas = notas;
+        this.nombreMateria = nombreMateria;
+    
     }
 
     
