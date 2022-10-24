@@ -35,6 +35,13 @@ export class ListComponent implements OnInit {
       this.materias = this.orderBy(data);
     });
     
+    Swal.fire({
+      title: "Cargando datos, un momento...",
+      timer: 2000,
+      didOpen: () => {
+        Swal.showLoading();
+      }
+    })
   }
 
   orderBy(materias: Materia[]): Materia[] {
@@ -50,6 +57,7 @@ export class ListComponent implements OnInit {
       'id':0,
       'nombreMateria':""
     }
+    let flag = 0;
     const { value: formValues } = await Swal.fire({
       title: 'Registro de materia',
       html:
@@ -62,7 +70,10 @@ export class ListComponent implements OnInit {
           '<label for="floatingPassword">Nombre de la materia</label>'+
         '</div>',
       focusConfirm: false,
-      showCancelButton: true,
+      confirmButtonText: 'Si',
+      allowOutsideClick:false,
+      showCloseButton:true,
+      showCancelButton:true,
       preConfirm: () => {
         var codigoMateria = (document.getElementById('codigoMateria') as HTMLInputElement).value;
         var nombreMateria = (document.getElementById('nombreMateria') as HTMLInputElement).value;
@@ -74,7 +85,9 @@ export class ListComponent implements OnInit {
     })
       materiaNueva.id = parseInt(formValues?.[0]!);
       materiaNueva.nombreMateria = formValues?.[1]!;
-      if(materiaNueva.id == NaN || materiaNueva.nombreMateria == undefined){
+      if(materiaNueva.nombreMateria == undefined) return;
+      if(isNaN(materiaNueva.id) || materiaNueva.nombreMateria == ''){
+        console.log(materiaNueva)
         Swal.fire({
           title:"Ups!",
           icon:"error",
@@ -93,11 +106,5 @@ export class ListComponent implements OnInit {
           window.location.reload();
         })
       })
-  }
-
-  eliminarMateria(id:any){
-    this.materiaService.delete(id).subscribe(() => {
-      window.location.reload();
-    })
   }
 }

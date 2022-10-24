@@ -22,9 +22,5 @@ export class MateriaService {
     return this.httpClient.post<any>(this.materiaURL, materia);
   }
 
-  public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.materiaURL + id)
-  }
-
   
 }
