@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Estudiante } from '../models/estudiante';
 import { EstudianteService } from '../services/estudiante.service';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-estudiante',
@@ -15,17 +16,20 @@ export class EstudianteComponent implements OnInit {
 
   constructor(
     private estudianteService: EstudianteService , 
-    private spinner: NgxSpinnerService
+    private spinner: NgxSpinnerService,
+    private route: ActivatedRoute
   ) { }
 
 
   
   ngOnInit(): void {
-    this.onLoad();
+    this.route.paramMap.subscribe((params: ParamMap) =>{
+      this.onLoad(params.get('id'));
+    })
   }
  
-  onLoad(): void {
-    this.estudianteService.list().subscribe(data => {
+  onLoad(id:any): void {
+    this.estudianteService.list(id).subscribe(data => {
       this.estudiantes = this.orderBy(data);
     });
     

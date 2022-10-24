@@ -1,8 +1,8 @@
 export class Materia {
 
 
-    id: number;
-    nombreMateria: string;
+    id!: number;
+    nombreMateria!: string;
 
 
    

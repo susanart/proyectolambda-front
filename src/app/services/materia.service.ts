@@ -18,8 +18,12 @@ export class MateriaService {
     return this.httpClient.get<Materia[]>(this.materiaURL);
   }
 
-  public write(materia: Materia): Observable<Materia> {
-    return this.httpClient.post<Materia>(this.materiaURL, materia);
+  public save(materia: any): Observable<any>{
+    return this.httpClient.post<any>(this.materiaURL, materia);
+  }
+
+  public delete(id: number): Observable<any>{
+    return this.httpClient.delete<any>(this.materiaURL + id)
   }
 
   

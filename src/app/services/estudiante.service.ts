@@ -13,12 +13,14 @@ export class EstudianteService {
   estudianteURL = environment.estudiantesURL;
 
   constructor(private httpClient: HttpClient) { }
-    public list(): Observable<Estudiante[]> {
-      return this.httpClient.get<Estudiante[]>(this.estudianteURL);
+
+    public list(id:any): Observable<Estudiante[]> {
+      return this.httpClient.get<Estudiante[]>(this.estudianteURL + "/" + id);
     }
   
     public write(estudiante: Estudiante): Observable<Estudiante> {
       return this.httpClient.post<Estudiante>(this.estudianteURL, estudiante);
     }
+    
   
 }
