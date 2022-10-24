@@ -17,7 +17,8 @@
 
 .align-items-sm-start {
     background: #ACD9B2 !important;
-   
+    height: 80rem;
+    
 }
 
 .align-items-sm-start a {
@@ -27,6 +28,7 @@
     border: 1px solid var(--white);
     padding: 8px;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 .nav-pills .nav-link:hover {
@@ -34,3 +36,4 @@
   background-color: #e7fdea;
   
 }
+
