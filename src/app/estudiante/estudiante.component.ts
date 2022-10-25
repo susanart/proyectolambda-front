@@ -28,28 +28,20 @@ export class EstudianteComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
       this.onLoad(params.get('id'));
-    })
-  }
-
-  onLoad(id: any): void {
-    this.estudianteService.list(id).subscribe(data => {
-      this.estudiantes = this.orderBy(data);
-    });
-    if(this.estudiantes.length == 0){
-      Swal.fire({
-        title: "Ups!!",
-        icon:"error",
-        text:"No hay estudiantes registrados para esta materia!!"
-      })
-    }else{
       Swal.fire({
         title: "Cargando datos, un momento...",
-        timer: 2000,
+        timer: 3000,
         didOpen: () => {
           Swal.showLoading();
         }
       })
-    }    
+    })
+  }
+
+   onLoad(id: any): void{
+    this.estudianteService.list(id).subscribe(data => {
+      this.estudiantes = this.orderBy(data);
+    })
 
   }
 
