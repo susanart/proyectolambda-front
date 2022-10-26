@@ -56,6 +56,11 @@ button[_ngcontent-rky-c51], input {
   
 }
 
+input{
+  width: 60px;
+  align-items: center;
+  text-align: center;
+}
 
 
 /* CSS TABLA */
