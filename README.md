@@ -1,27 +1,46 @@
-# LambdaFront
+# TakeNote
+## Proyecto Frontend Lambda
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+[![N|Solid](https://cdn.worldvectorlogo.com/logos/angular-3.svg)](https://nodesource.com/products/nsolid)
 
-## Development server
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+El Presente Proyecto open-source fue realizado con el framework [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
-## Code scaffolding
+| Componentes | Descripcion  |
+| ------------ | ------------ |
+|  Materia | Lista en una tabla las materias que se han guardado en el sistema.  |
+|  Estudiante | Lista los estudiantes con sus respectivas notas para ser modificadas y guardadas.  |
+|  Header | Genera el sidebar del aplicativo  |
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instalación
 
-## Running unit tests
+Requiere el framework [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6. para ejecutar.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Autor(es)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+**Susana Rojas Triana - Desarrollador**
 
-## Further help
+-   <https://github.com/susanart>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Samantha Zamora Amaya - Desarrollador**
+
+-   <https://github.com/SamanthaZamora>
+
+**Johnny Alexander Quintero Reyes - Desarrollador**
+
+-   <https://github.com/JohnnyQuintero16>
+
+## Institución Académica
+
+**[Programa de Ingeniería de Sistemas]** de la **[Universidad Francisco de Paula Santander]**
+
+[Programa de Ingeniería de Sistemas]: https://ingsistemas.cloud.ufps.edu.co/
+[Universidad Francisco de Paula Santander]: https://ww2.ufps.edu.co/
+
+## Licencia
+El código fuente se publica bajo la [MIT License](https://github.com/Arquitectura-de-Software-UFPS-2022-I/Java-Desktop/blob/main/LICENSE).
+
