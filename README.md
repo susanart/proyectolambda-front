@@ -5,6 +5,10 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+### Descripción
+
+#### Este aplicativo web se realizo aplicando conceptos aprendidos de la tecnología que nos proporcia AWS, que son las lambdas, en la que basicamente consisten en crear funciones para que hagan una tarea en específico (consulta a base de datos, cargar archivo, agregar datos a una base de datos, entre otros). Es así como este aplicativo web se desarrollo para realizar la gestión de notas de un profesor en su determinada materia.
+
 El Presente Proyecto open-source fue realizado con el framework [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
 | Componentes | Descripcion  |
